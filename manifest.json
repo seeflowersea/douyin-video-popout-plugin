@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "视频弹出",
+  "version": "1.0.0",
+  "description": "在抖音网页中添加可拖拽、可缩放的小窗视频播放器",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.douyin.com/*",
+    "https://*.douyin.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.douyin.com/*",
+        "https://*.douyin.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "css": [
+        "content-style.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "视频弹出"
+  }
+}

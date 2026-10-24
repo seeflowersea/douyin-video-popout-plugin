@@ -1,2 +1,29 @@
-# douyin-video-popout-plugin
-Edge extension for Douyin video pop-out with draggable, resizable floating button and adjustable opacity.
+# 视频弹出
+
+这是一个 Edge 浏览器扩展，用于在抖音主站及其扩展页面中提供一个悬浮按钮，用于打开和关闭视频小窗。
+
+功能说明：
+- 页面中出现可拖拽的外置按钮
+- 点击按钮可打开/关闭小窗
+- 小窗支持拖动和调整大小
+- 可调节小窗透明度
+- 鼠标移入小窗时保持不透明，移出时恢复设置的透明度
+- 进入抖音页面即可直接使用
+
+安装步骤：
+1. 打开 Edge 浏览器，访问 `edge://extensions/`
+2. 打开右上角的「开发者模式」
+3. 点击「加载已解压的扩展程序」
+4. 选择当前项目目录
+5. 打开抖音网页，页面上会出现浮动按钮
+
+生成 ZIP：
+- 你也可以在仓库页面直接下载整个仓库的 ZIP 压缩包，或在项目目录执行：
+
+  bash package.sh
+
+这样会生成一个 `dist/douyin-video-popout.zip` 压缩包。
+
+注意：
+- 由于该扩展会从页面中抓取当前视频元素，因此在抖音页面中需要等待视频内容加载完成后再点击按钮。
+- 若页面没有可播放的视频，弹窗会提示未找到视频源。
